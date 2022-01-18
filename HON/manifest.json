@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "sample",
+    "description": "data collector",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js",
+                "html2canvas.js"
+            ]
+        }
+    ]
+}
